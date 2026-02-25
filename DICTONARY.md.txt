@@ -1,0 +1,56 @@
+
+ 📄: data/data_dictionary.md
+
+n
+# 📊 Amazon Product Data Dictionary
+
+## Dataset Overview
+- Source: Amazon Product Dataset
+- Rows: 1,465
+- Columns: 15
+- Time Period: 2024-2026
+
+## Column Descriptions
+
+| Column Name | Description | Data Type | Sample Value |
+|-------------|-------------|-----------|--------------|
+| `product_id` | Unique identifier for each product | String | "B01418SX4Y" |
+| `actual_price` | Current selling price in ₹ | Float | 2416.0 |
+| `discount_percentage` | Discount applied (%) | Float | 35.2 |
+| `rating` | Average customer rating (1-5 scale) | Float | 4.2 |
+| `rating_count` | Number of customer ratings | Integer | 1250 |
+| `original_price` | Price before discount (calculated) | Float | 3724.0 |
+| `estimated_cost` | Estimated cost (40% of original) | Float | 1489.6 |
+| `profit_per_unit` | Profit per unit (actual - cost) | Float | 926.4 |
+| `margin_percent` | Profit margin percentage | Float | 38.3 |
+| `estimated_revenue` | Revenue using rating_count | Float | 3020000 |
+| `estimated_profit` | Total profit using rating_count | Float | 1158000 |
+| `Price Segment` | Budget/Mid-Range/Premium/Luxury | String | "Premium" |
+| `Rating Category` | Poor/Average/Good | String | "Good" |
+| `Margin Tier` | Loss/Low/Medium/High/Super High | String | "High" |
+| `Profit Status` | Profitable/Loss Making | String | "Profitable" |
+
+Calculated Fields
+
+ Price Segment Logic
+- Budget: `< ₹500`
+- Mid-Range:** `₹500 - ₹2000`
+- Premium: `₹2000 - ₹5000`
+- **Luxury:** `> ₹5000`
+
+### Rating Category Logic
+- **Poor:** `rating < 3`
+- **Average:** `3 ≤ rating < 4`
+- **Good:** `rating ≥ 4`
+
+### Margin Tier Logic
+- **Loss Making:** `margin < 0%`
+- **Low Margin:** `0% ≤ margin < 10%`
+- **Medium Margin:** `10% ≤ margin < 20%`
+- **High Margin:** `20% ≤ margin < 30%`
+- **Super High:** `margin ≥ 30%`
+
+## Notes
+- All monetary values are in Indian Rupees (₹)
+- Profit calculations assume 40% cost of goods sold
+- Rating_count used as proxy for sales volume

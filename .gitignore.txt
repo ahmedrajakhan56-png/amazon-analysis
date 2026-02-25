@@ -1,0 +1,55 @@
+gitignore File
+
+Python
+pycache/
+*.py[cod]
+*.pyc
+*.pyd
+*.pyo
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+env/
+.env
+.venv/
+Pipfile.lock
+poetry.lock
+
+Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+/.ipynb_checkpoints/
+
+Data (don't upload large files)
+*.csv
+*.xlsx
+*.xls
+!data/amazon_sample.csv # except sample
+
+Power BI
+*.pbix.user
+*.pbix.bak
+
+AWS
+.aws/
+aws_*.json
+credentials
+config
+*.pem
+*.key
+
+IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+Logs
+*.log
+logs/
