@@ -3,10 +3,10 @@ End-to-End Data Analytics Project analyzing 1,465 Amazon products with Python, A
 
  Amazon Product Profitability Analysis
 
-[Python](https://img.shields.io/badge/Python-3.12-blue)
-[AWS](https://img.shields.io/badge/AWS-S3%20%7C%20Athena-orange)
-[PowerBI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
-[License](https://img.shields.io/badge/License-MIT-green)
+[Python](amozon_cleandata.ipynb)
+[AWS](aws.ipynb)
+[PowerBI](POWER BI ALL MEASURES.pdf)
+[License](MIT License.txt)
 
  📋 Project Overview
 An end-to-end data analytics project analyzing **1,465 Amazon products** to identify profit/loss patterns, optimize pricing strategy, and provide actionable business recommendations.
@@ -41,7 +41,7 @@ An Amazon seller has 1,465 products but doesn't know:
  📊 Dashboard Pages
 
  Page 1: Executive Dashboard
-![Executive Dashboard](screenshots/page1_executive.png)
+![Executive Dashboard](Screenshot 2026-02-25 202047.png)
 
 KPIs:
 - Total Products: 1,465
@@ -50,7 +50,7 @@ KPIs:
 - Profitable Products: 85%
 
  Page 2: Profitability Analysis
-![Profitability Analysis](screenshots/page2_profitability.png)
+![Profitability Analysis](Screenshot 2026-02-25 202117.png)
 
 Key Insights:
 - Mid-Range segment (₹500-2000): 44% of profit
@@ -58,7 +58,7 @@ Key Insights:
 - Loss products: 72% average discount
 
  Page 3: Loss Products Analysis
-![Loss Analysis](screenshots/page3_loss_analysis.png)
+![Loss Analysis](Screenshot 2026-02-25 202136.png)
 
 Why Products Lose Money:
 - 2x higher discounts (35% vs 18%)
